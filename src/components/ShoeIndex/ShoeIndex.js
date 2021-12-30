@@ -54,7 +54,11 @@ const LeftColumn = styled.div`
 
 const MainColumn = styled.div``;
 
-const Header = styled.header``;
+const Header = styled.header`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
 
 const Title = styled.h2`
   font-size: 1.5rem;
