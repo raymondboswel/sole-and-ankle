@@ -42,9 +42,15 @@ const ShoeIndex = ({ sortId, setSortId }) => {
   );
 };
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+`;
 
-const LeftColumn = styled.div``;
+const LeftColumn = styled.div`
+  flex: 0 0 250px;
+`;
 
 const MainColumn = styled.div``;
 

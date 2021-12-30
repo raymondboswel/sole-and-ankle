@@ -22,14 +22,10 @@ const SuperHeader = () => {
   );
 };
 
-const Wrapper = styled.div`
-  font-size: 0.875rem;
-  color: ${COLORS.gray[300]};
-  background-color: ${COLORS.gray[900]};
-`;
 
 const MarketingMessage = styled.span`
   color: ${COLORS.white};
+  flex-grow: 1;  
 `;
 
 const HelpLink = styled.a`
@@ -41,5 +37,33 @@ const HelpLink = styled.a`
     outline: none;
   }
 `;
+
+const Wrapper = styled.div`
+  font-size: 0.875rem;
+  color: ${COLORS.gray[300]};
+  background-color: ${COLORS.gray[900]};
+  display: flex;
+  justify-content: space-around;
+  padding: 8px 8px 8px 8px;
+
+  ${SearchInput} {
+    margin-left: 8px;
+    }
+${HelpLink} {
+    margin-left: 8px;
+    }
+
+${UnstyledButton} {
+    margin-left: 8px;
+    }
+  
+
+  &:first-child {
+    margin-left: 0px;
+  }
+}
+ 
+  `;
+
 
 export default SuperHeader;
